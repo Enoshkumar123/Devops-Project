@@ -1,0 +1,202 @@
+ubuntu20@Laptop:~$
+ubuntu20@Laptop:~$
+ubuntu20@Laptop:~$
+ubuntu20@Laptop:~$ echo "PYTHON PROGRAMMING"
+PYTHON PROGRAMMING
+ubuntu20@Laptop:~$
+ubuntu20@Laptop:~$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> hello
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'hello' is not defined
+>>> 'hello'
+'hello'
+>>> a=100
+>>> a++
+  File "<stdin>", line 1
+    a++
+      ^
+SyntaxError: invalid syntax
+>>> a+=1
+>>> a
+101
+>>> a-=10
+>>> a
+91
+>>> var1="variable'
+  File "<stdin>", line 1
+    var1="variable'
+                  ^
+SyntaxError: EOL while scanning string literal
+>>> var1="variable"
+>>> var1
+'variable'
+>>> var2='second'
+>>> print(var1+var2)
+variablesecond
+>>> print(var1+" "+var2)
+variable second
+>>> if(a<100):
+...     print(100)
+... else:
+...     print(50)
+...
+100
+>>> if(a>100):
+...     print(100)
+... else:
+...     print(50)
+...
+50
+>>> for i in range(5):
+...     print(i)
+...
+0
+1
+2
+3
+4
+>>> for i in range(5,55):
+...     if(i%2==0):
+...             print(i)
+...
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+40
+42
+44
+46
+48
+50
+52
+54
+>>>
+>>> arr=[1,2,3,4,5,6]
+>>> for i in arr:
+...     print(i)
+...
+1
+2
+3
+4
+5
+6
+>>> print('PrimeNumbers')
+PrimeNumbers
+>>>
+>>> def isPrime(n):
+...     f=0
+...     i=2
+...     while(i<n):
+...         if(n%i==0):
+...             f=1
+...             return 1
+...         i+=1
+...     return 0
+...
+>>> def Prime(a,b):
+...     if(a<2):
+...         i=2
+...     else:
+...         i=a
+...     while(i<=b):
+...         if(isPrime(i)==0):
+...             print(i)
+...         i+=1
+...
+>>> Prime(0,10)
+2
+3
+5
+7
+>>> Prime(0,100)
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
+53
+59
+61
+67
+71
+73
+79
+83
+89
+97
+>>> Prime(10,50)
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
+>>>
+>>>
+>>>
+>>> class A:
+        b=""
+...     a=1
+...     b=""
+...     def readA(self):
+...             self.a=int(input(" Enter No. : "))
+...             self.b=input(" Enter String : ")
+...     def showA(self):
+...             print(self.a,"  ",self.b)
+...
+>>>
+>>> n=A()
+>>> n.readA()
+ Enter No. : 5
+ Enter String : aaa
+>>> n.showA()
+5    aaa
+>>>
+>>> f=open('//home//ubuntu20//outer//innerfolder//file.txt')
+>>> print(f)
+<_io.TextIOWrapper name='//home//ubuntu20//outer//innerfolder//file.txt' mode='r' encoding='UTF-8'>
+>>>
+>>> from math import *
+>>> sqrt(9)
+3.0
+>>> pow(3,4)
+81.0
+>>> pow(4,3)
+64.0
+>>>
+>>>
+>>> exit()

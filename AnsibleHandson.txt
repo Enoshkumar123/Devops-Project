@@ -1,0 +1,118 @@
+enosh@LAPTOP-9T5BEIDD:~$ ansible-galaxy init --force --offline enoshrole
+- Role enoshrole was created successfully
+enosh@LAPTOP-9T5BEIDD:~$ tree enoshrole/
+enoshrole/
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+8 directories, 8 files
+enosh@LAPTOP-9T5BEIDD:~$ cd enosh_playbook
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook$ ansible-galaxy init --force --offline install-tomcat
+- Role install-tomcat was created successfully
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook$ cd install-tomcat
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook/install-tomcat$ ls
+README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook/install-tomcat$ cd ..
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook$ ansible-galaxy init --force --offline start-tomcat
+- Role start-tomcat was created successfully
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook$ cd install-tomcat
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook/install-tomcat$ cd ..
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook$ tree install-tomcat/
+install-tomcat/
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+8 directories, 8 files
+enosh@LAPTOP-9T5BEIDD:~$ cd varna_playbook
+enosh@LAPTOP-9T5BEIDD:~/varna_playbook$ nano varna_orchestrate.yml
+
+---
+- hosts: tomcat-node
+roles:
+  - {role: install-tomcat}
+  - {role: start-tomcat}
+
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook$ cd install-tomcat
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook/install-tomcat$ cd tasks
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook/install-tomcat/tasks$ sudo ansible-playbook -i hosts enosh-orchestrate.yml -vvv
+[sudo] password for enosh:
+ansible-playbook [core 2.11.7]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+Using /etc/ansible/ansible.cfg as config file
+ERROR! the playbook: enosh-orchestrate.yml could not be found
+enosh@LAPTOP-9T5BEIDD:~/enosh_playbook/install-tomcat/tasks$
+[sudo] password for enosh:
+ansible-playbook [core 2.12.1]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.8.10 (default, Nov 26 2021, 20:14:08) [GCC 9.3.0]
+  jinja version = 2.10.1
+  libyaml = True
+Using /etc/ansible/ansible.cfg as config file
+ERROR! the playbook: varna_orchestrate.yml could not be found
+enosh@LAPTOP-9T5BEIDD:~$ cd varna_playbook
+enosh@LAPTOP-9T5BEIDD:~/varna_playbook$ sudo ansible-playbook -i hosts varna_orchestrate.yml -vvv
+ansible-playbook [core 2.12.1]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.8.10 (default, Nov 26 2021, 20:14:08) [GCC 9.3.0]
+  jinja version = 2.10.1
+  libyaml = True
+Using /etc/ansible/ansible.cfg as config file
+host_list declined parsing /home/varna_playbook/hosts as it did not pass its verify_file() method
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- hosts: tomcat-node
+roles:
+^ here

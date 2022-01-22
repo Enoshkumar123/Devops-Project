@@ -1,0 +1,242 @@
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.name "Enosh"
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.name
+Enosh
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.email "ranoshkumar18@gmail.com"
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.email
+ranoshkumar18@gmail.com
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git clone https://github.com/libgit2/libgit2
+Cloning into 'libgit2'...
+remote: Enumerating objects: 114683, done.
+remote: Counting objects: 100% (114683/114683), done.
+remote: Compressing objects: 100% (31723/31723), done.
+Receiving objects:  10% (11699/114683), 3.45 MiB | 28.00 KiB/s
+Receiving objects:  10% (12159/114683), 3.55 MiB | 24.00 KiB/s
+error: 7934 bytes of body are still expected3 MiB | 20.00 KiB/s
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git status -s
+fatal: not a git repository (or any of the parent directories): .git
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.name "Enosh"
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.name
+Enosh
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.email "ranoshkumar18@gmail.com"
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.email
+ranoshkumar18@gmail.com
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git clone https://github.com/libgit2/libgit2
+Cloning into 'libgit2'...
+remote: Enumerating objects: 114683, done.
+remote: Counting objects: 100% (114683/114683), done.
+remote: Compressing objects: 100% (31723/31723), done.
+Receiving objects:  10% (11699/114683), 3.45 MiB | 28.00 KiB/s
+Receiving objects:  10% (12159/114683), 3.55 MiB | 24.00 KiB/s
+error: 7934 bytes of body are still expected3 MiB | 20.00 KiB/s
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git status -s
+fatal: not a git repository (or any of the parent directories): .git
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.name "Enosh"
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.name
+Enosh
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.email "ranoshkumar18@gmail.com"
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git config --global user.email
+ranoshkumar18@gmail.com
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git clone https://github.com/libgit2/libgit2
+Cloning into 'libgit2'...
+remote: Enumerating objects: 114683, done.
+remote: Counting objects: 100% (114683/114683), done.
+remote: Compressing objects: 100% (31723/31723), done.
+Receiving objects:  10% (11699/114683), 3.45 MiB | 28.00 KiB/s
+Receiving objects:  10% (12159/114683), 3.55 MiB | 24.00 KiB/s
+error: 7934 bytes of body are still expected3 MiB | 20.00 KiB/s
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+$ git status -s
+fatal: not a git repository (or any of the parent directories): .git
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~
+HP@LAPTOP-9T5BEIDD MINGW64 ~ (master)
+$ git status
+
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Desktop/DevopsSRE/Ansible.txt
+        deleted:    Desktop/DevopsSRE/CICDpipeline.docx
+        deleted:    Desktop/DevopsSRE/CICDpipeline.pdf
+        deleted:    Desktop/DevopsSRE/Dockerclassroom.docx
+        
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        -1.14-windows.xml
+        .bash_history
+        .docker/
+        .gitconfig
+        .idlerc/
+        .kube/
+        .lesshst
+        .viminfo
+        
+        Desktop/DevopsTrainingfinalproject/
+        Desktop/Discord.lnk
+        Desktop/Dockerclassroom.pdf
+        Desktop/Imp Devops notes links.docx
+        Desktop/MCQs.docx
+        Desktop/Virtualisation.pdf
+        Desktop/desktop.ini
+       
+        PycharmProjects/
+        Saved Games/
+        Searches/
+        VLC media player.lnk
+        Videos/
+        create frnds list.py
+        getting-started/
+        libgit2/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~ (master)
+$ git status -s
+
+?? -1.14-windows.xml
+?? .bash_history
+?? .docker/
+?? .gitconfig
+?? .idlerc/
+?? .kube/
+?? .lesshst
+?? .viminfo
+?? .vscode/
+?? "3D Objects/"
+?? AppData/
+?? Contacts/
+?? Desktop/DevopsTrainingfinalproject/
+?? Desktop/Discord.lnk
+?? Desktop/Dockerclassroom.pdf
+?? "Desktop/Imp Devops notes links.docx"
+?? Desktop/MCQs.docx
+?? Desktop/Virtualisation.pdf
+?? Desktop/desktop.ini
+?? "Desktop/workspace visual studio.code-workspace"
+?? Documents/
+?? Downloads/
+?? Favorites/
+?? IntelGraphicsProfiles/
+?? Links/
+?? Music/
+
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~ (master)
+$ git commit --amend
+
+warning: could not open directory 'Application Data/': Permission denied
+
+[master 13700a0] Devops training
+ Date: Sat Jan 8 14:30:57 2022 +0530
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Desktop/DevopsSRE/CICDpipeline.pdf
+ create mode 100644 Desktop/DevopsSRE/Dockerclassroom.pdf
+ create mode 100644 Desktop/DevopsSRE/Dockerworkingwithasampleapplication.pdf
+ create mode 100644 Desktop/DevopsSRE/kubernetes.pdf
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~ (master)
+$ git branch
+  carzy
+  crazy
+* master
+  switch
+
+HP@LAPTOP-9T5BEIDDMINGW64 ~ (master)
+$ git switch crazy
+Switched to branch 'crazy'
+D       Desktop/DevopsSRE/Dockerclassroom.docx
+D       Desktop/DevopsSRE/Dockerworkingwithasampleapplication.docx
+D       Desktop/DevopsSRE/Ubuntu.txt
+D       Desktop/Practicegitproject/sampleforgit.txt
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~ (crazy)
+$ git switch master
+Switched to branch 'master'
+D       Desktop/DevopsSRE/Dockerclassroom.docx
+D       Desktop/DevopsSRE/Dockerworkingwithasampleapplication.docx
+D       Desktop/DevopsSRE/Ubuntu.txt
+D       Desktop/Practicegitproject/sampleforgit.txt
+
+HP@LAPTOP-9T5BEIDD MINGW64 ~ (master)
+$ git merge crazy
+Already up to date.
